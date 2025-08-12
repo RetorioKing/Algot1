@@ -1,0 +1,24 @@
+market:
+  ist_open: "09:15"
+  ist_close: "15:30"
+  auto_squareoff_time: "15:20"
+  skip_first_minutes: 5
+  skip_last_minutes: 10
+risk:
+  per_trade_risk_pct: 0.005
+  daily_max_loss_pct: 0.01
+  max_open_positions: 6
+  notional_cap_per_trade: 250000
+  allow_fno: true
+  allow_equities: true
+options:
+  underlyings: ["NIFTY","BANKNIFTY"]
+  prefer_weekly: true
+  target_delta: [0.35,0.55]
+  min_oi: 50000
+  min_volume: 10000
+  max_spread_pct: 0.005
+  prefer_premium_range: [50,200]
+strategy_params:
+  index_trend: { ema_fast: 20, ema_slow: 50, adx_len: 14, adx_min: 20, atr_len: 14, stop_atr_mult: 0.75, trail_atr_mult: 0.5 }
+  equity_vwap_reversion: { rsi_len: 5, rsi_low: 20, rsi_high: 80, vwap_sigma_mult: 1.2, atr_len: 14, exit_to_vwap: true }

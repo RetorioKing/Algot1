@@ -1,0 +1,4 @@
+equity_intraday: { brokerage_per_order: 20.0, stt_sell_pct: 0.00025, exchange_txn_pct: 0.000297, sebi_turnover_pct: 0.00002, stamp_buy_pct: 0.00003, gst_pct: 0.18 }
+equity_futures:  { brokerage_per_order: 20.0, stt_sell_pct: 0.0002,  exchange_txn_pct: 0.0000173, sebi_turnover_pct: 0.00002, stamp_buy_pct: 0.00002, gst_pct: 0.18 }
+equity_options:  { brokerage_per_order: 20.0, stt_sell_pct: 0.001,   exchange_txn_pct: 0.0003503, sebi_turnover_pct: 0.00002, stamp_buy_pct: 0.00003, gst_pct: 0.18 }
+slippage_bps: 10
